@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="2021/03/22/hello-world/"/>
-      <url>2021/03/22/hello-world/</url>
+      <title>写博客的初衷</title>
+      <link href="2021/03/22/xie-bo-ke-de-chu-zhong/"/>
+      <url>2021/03/22/xie-bo-ke-de-chu-zhong/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="整理分析"><a href="#整理分析" class="headerlink" title="整理分析"></a>整理分析</h2><p>之前研究生生涯，没有足够的时间的进行博客的撰写，导致学过的知识或用过的知识不久之后就很容易遗忘，在即将毕业之际，希望能够在整理和回顾知识的时候，整理和记录。同时防止自己遗忘。</p><h2 id="采用博客框架"><a href="#采用博客框架" class="headerlink" title="采用博客框架"></a>采用博客框架</h2><p>采用的博客框架为Hexo+github来搭建，对于博客发布很友好，在搭建过程中参考了</p>]]></content>
       
       
       
