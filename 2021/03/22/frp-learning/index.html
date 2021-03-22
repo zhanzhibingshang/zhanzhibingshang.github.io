@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="写博客的初衷, CV DeepLearning 小白 计算机视觉 深度学习 学而时习之">
+    <meta name="keywords" content="内网穿透工具, CV DeepLearning 小白 计算机视觉 深度学习 学而时习之">
     <meta name="description" content="算法小白 | 计算机视觉 | 机器学习">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>写博客的初衷 | 小白的博客</title>
+    <title>内网穿透工具 | 小白的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/frp.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">写博客的初衷</h1>
+                    <h1 class="description center-align post-title">内网穿透工具</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
+                                <span class="chip bg-color">内网穿透</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -455,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    121
+                    393
                 </div>
                 
 
@@ -485,8 +502,37 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="整理分析"><a href="#整理分析" class="headerlink" title="整理分析"></a>整理分析</h2><p>之前研究生生涯，没有足够的时间的进行博客的撰写，导致学过的知识或用过的知识不久之后就很容易遗忘，在即将毕业之际，希望能够在整理和回顾知识的时候，整理和记录。同时防止自己遗忘。</p>
-<h2 id="采用博客框架"><a href="#采用博客框架" class="headerlink" title="采用博客框架"></a>采用博客框架</h2><p>采用的博客框架为Hexo+github来搭建，对于博客发布很友好，在搭建过程中参考了</p>
+                <h2 id="内网穿透工具frp"><a href="#内网穿透工具frp" class="headerlink" title="内网穿透工具frp"></a>内网穿透工具frp</h2><p>由于计算机视觉中的项目通常需要有个网页演示界面，因此使用Flask搭建简单的展示界面后台调用Pytorch模型进行计算，但由于带有显卡的服务器没有公网IP和域名，因此购买了腾讯云一年最低配的云服务器作为内网穿透服务器，并使用frp作为穿透工具，简单易用。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">frp下载地址</a></p>
+<p>通过上面的链接下载最新版本的frp，并在本地服务器和云服务器上分别解压。</p>
+<h3 id="云服务器配置"><a href="#云服务器配置" class="headerlink" title="云服务器配置"></a>云服务器配置</h3><p>进入解压文件夹，编辑frps.ini文件</p>
+<pre class="line-numbers language-none"><code class="language-none">[common]
+bind_port = 1234 #frp进程本身的进程端口
+vhost_http_port = 7000 #外网访问端口，类型为http类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>运行程序</p>
+<pre class="line-numbers language-none"><code class="language-none">cd frp
+./frps -c ./frps.ini #运行云服务器frp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="本地服务器配置"><a href="#本地服务器配置" class="headerlink" title="本地服务器配置"></a>本地服务器配置</h3><p>进入解压文件夹，编辑frpc.ini文件</p>
+<pre class="line-numbers language-none"><code class="language-none">[common]
+server_addr = 121.5.205.206 #云服务器公网IP
+server_port = 1234 #frp程序所用端口，与云服务器的bind_port一致
+
+[blog]
+type = http
+local_ip = 127.0.0.1 ## 本地使用localhost才能转发
+local_port = 4000　## 本地flask程序端口
+remote_port = 7000　##外网访问端口
+custom_domains = 121.5.205.206　#云服务器公网IP<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>运行程序</p>
+<pre class="line-numbers language-none"><code class="language-none">cd frp
+./frpc -c ./frpc.ini #运行云服务器frp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="多个端口需要转发"><a href="#多个端口需要转发" class="headerlink" title="多个端口需要转发"></a>多个端口需要转发</h3><p>目前知道最简单的方式是分别建立多个ini文件并分别运行，但也有直接写在一个ini文件中的方式，但因为用的不多，并没有深入探究</p>
 
                 
             </div>
@@ -513,7 +559,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhanzhibingshang.github.io/2021/03/22/xie-bo-ke-de-chu-zhong/">https://zhanzhibingshang.github.io/2021/03/22/xie-bo-ke-de-chu-zhong/</a>
+                    <a href="https://zhanzhibingshang.github.io/2021/03/22/frp-learning/">https://zhanzhibingshang.github.io/2021/03/22/frp-learning/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -550,7 +596,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
+                                    <span class="chip bg-color">内网穿透</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -746,12 +800,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/03/22/frp-learning/">
+                <a href="/2021/03/22/ubuntu-xia-da-jian-hexo-github-bo-ke-kuang-jia/">
                     <div class="card-image">
                         
-                        <img src="/images/frp.png" class="responsive-img" alt="内网穿透工具">
+                        <img src="/images/hexo_github.png" class="responsive-img" alt="Ubuntu下搭建Hexo+github博客框架">
                         
-                        <span class="card-title">内网穿透工具</span>
+                        <span class="card-title">Ubuntu下搭建Hexo+github博客框架</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -768,8 +822,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                    个人博客
                                 </a>
                             
                             
@@ -779,12 +833,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/Ubuntu/">
+                        <span class="chip bg-color">Ubuntu</span>
                     </a>
                     
-                    <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
-                        <span class="chip bg-color">内网穿透</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">个人博客</span>
                     </a>
                     
                 </div>
@@ -795,7 +853,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/03/22/xie-bo-ke-de-chu-zhong/">
@@ -825,7 +883,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

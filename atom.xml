@@ -6,7 +6,7 @@
   <link href="https://zhanzhibingshang.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhanzhibingshang.github.io/"/>
-  <updated>2021-03-22T06:34:47.966Z</updated>
+  <updated>2021-03-22T12:06:28.719Z</updated>
   <id>https://zhanzhibingshang.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://zhanzhibingshang.github.io/2021/03/22/test/"/>
+    <id>https://zhanzhibingshang.github.io/2021/03/22/test/</id>
+    <published>2021-03-22T12:06:28.000Z</published>
+    <updated>2021-03-22T12:06:28.719Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu下搭建Hexo+github博客框架</title>
+    <link href="https://zhanzhibingshang.github.io/2021/03/22/ubuntu-xia-da-jian-hexo-github-bo-ke-kuang-jia/"/>
+    <id>https://zhanzhibingshang.github.io/2021/03/22/ubuntu-xia-da-jian-hexo-github-bo-ke-kuang-jia/</id>
+    <published>2021-03-22T11:30:35.000Z</published>
+    <updated>2021-03-22T12:03:37.770Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一直以来，很少做关于以往知识的总结，导致对于学过的技巧或者工具遗忘，不用了就生疏了。也尝试在飞书上进行笔记撰写，虽然飞书写笔记特别好用，但是因为较难共享。同时一直以来都有搭建个人博客的想法，之前学习过几天Django，虽然功能较为强大，不仅涉及前端后端和数据库等知识，但是不</summary>
+        
+      
+    
+    
+    
+    <category term="个人博客" scheme="https://zhanzhibingshang.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://zhanzhibingshang.github.io/tags/Ubuntu/"/>
+    
+    <category term="Hexo" scheme="https://zhanzhibingshang.github.io/tags/Hexo/"/>
+    
+    <category term="个人博客" scheme="https://zhanzhibingshang.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内网穿透工具</title>
+    <link href="https://zhanzhibingshang.github.io/2021/03/22/frp-learning/"/>
+    <id>https://zhanzhibingshang.github.io/2021/03/22/frp-learning/</id>
+    <published>2021-03-22T10:43:36.000Z</published>
+    <updated>2021-03-22T11:26:54.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;内网穿透工具frp&quot;&gt;&lt;a href=&quot;#内网穿透工具frp&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://zhanzhibingshang.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://zhanzhibingshang.github.io/tags/Linux/"/>
+    
+    <category term="内网穿透" scheme="https://zhanzhibingshang.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>写博客的初衷</title>
