@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>小白的博客</title>
   
-  
+  <subtitle>学而时习之</subtitle>
   <link href="https://zhanzhibingshang.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhanzhibingshang.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://zhanzhibingshang.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>小白</name>
     
   </author>
   
