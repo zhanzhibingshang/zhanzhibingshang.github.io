@@ -6,7 +6,7 @@
   <link href="https://zhanzhibingshang.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhanzhibingshang.github.io/"/>
-  <updated>2021-03-22T12:06:28.719Z</updated>
+  <updated>2021-03-22T12:03:37.770Z</updated>
   <id>https://zhanzhibingshang.github.io/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://zhanzhibingshang.github.io/2021/03/22/test/"/>
-    <id>https://zhanzhibingshang.github.io/2021/03/22/test/</id>
-    <published>2021-03-22T12:06:28.000Z</published>
-    <updated>2021-03-22T12:06:28.719Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Ubuntu下搭建Hexo+github博客框架</title>
