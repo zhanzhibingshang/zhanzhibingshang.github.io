@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>稀疏编码的近似学习</title>
+      <link href="2021/04/11/xi-shu-bian-ma-de-jin-si-xue-xi/"/>
+      <url>2021/04/11/xi-shu-bian-ma-de-jin-si-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="《Learning-Fast-Approximations-of-sparse-coding》"><a href="#《Learning-Fast-Approximations-of-sparse-coding》" class="headerlink" title="《Learning Fast Approximations of sparse coding》"></a>《Learning Fast Approximations of sparse coding》</h2><p>该文章引入非常高效简单的稀疏编码近似计算。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 个人博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu下搭建Hexo+github博客框架</title>
       <link href="2021/03/22/ubuntu-xia-da-jian-hexo-github-bo-ke-kuang-jia/"/>
       <url>2021/03/22/ubuntu-xia-da-jian-hexo-github-bo-ke-kuang-jia/</url>

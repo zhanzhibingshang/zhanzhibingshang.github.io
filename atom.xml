@@ -6,7 +6,7 @@
   <link href="https://zhanzhibingshang.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhanzhibingshang.github.io/"/>
-  <updated>2021-03-22T12:03:37.770Z</updated>
+  <updated>2021-04-12T12:32:26.866Z</updated>
   <id>https://zhanzhibingshang.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>稀疏编码的近似学习</title>
+    <link href="https://zhanzhibingshang.github.io/2021/04/11/xi-shu-bian-ma-de-jin-si-xue-xi/"/>
+    <id>https://zhanzhibingshang.github.io/2021/04/11/xi-shu-bian-ma-de-jin-si-xue-xi/</id>
+    <published>2021-04-11T11:09:06.000Z</published>
+    <updated>2021-04-12T12:32:26.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;《Learning-Fast-Approximations-of-sparse-coding》&quot;&gt;&lt;a href=&quot;#《Learning-Fast-Approximations-of-sparse-coding》&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文阅读" scheme="https://zhanzhibingshang.github.io/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://zhanzhibingshang.github.io/tags/Ubuntu/"/>
+    
+    <category term="Hexo" scheme="https://zhanzhibingshang.github.io/tags/Hexo/"/>
+    
+    <category term="个人博客" scheme="https://zhanzhibingshang.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu下搭建Hexo+github博客框架</title>
